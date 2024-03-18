@@ -9,6 +9,7 @@ const bodyParser = require('body-parser')
 //controller routes import
 const indexRouter = require('./controller/index')
 const authorRouter = require('./controller/authors')
+const bookRouter = require('./controller/books')
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -24,6 +25,7 @@ db.once('open', () => console.log('Connected To Mongoose'))
 //controller routes use
 app.use('/', indexRouter)
 app.use('/authors', authorRouter)
+app.use('/books', bookRouter)
 
 app.listen(process.env.PORT || 3000)
 
