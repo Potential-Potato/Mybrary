@@ -57,13 +57,9 @@ router.post('/', upload.single('cover'), async (req, res) => {
         }
         if(hasError) params.errMsg = 'Error creating book'
         res.render('books/new', params)
-    } catch (err){
-        console.log(err)
+    } catch {
         res.redirect('books')
     }
 
-//    catch {
-//     res.redirect('books')
-// }
 }
 module.exports = router
