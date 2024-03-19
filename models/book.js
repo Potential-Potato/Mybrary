@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-
-const coverImageBasePath = 'uplaods/bookCovers'
+const path = require('path')
+const coverImageBasePath = 'uploads/bookCovers'
 
 //acts like a table in sql 
 const booksSchema = new mongoose.Schema({
@@ -32,6 +32,12 @@ const booksSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'authorModel'
+    }
+})
+
+booksSchema.virtual('coverImagePath').get(function() {
+    if(this.coverImageName != null){
+        return path.join('/', coverImageBasePath, this.coverImageName)
     }
 })
 

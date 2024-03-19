@@ -1,6 +1,9 @@
 <body>
     <%- include('partials/header.ejs') %>
-    wkwkwkwk 
-    <br>
-    this is the homepage
+    <h2>Recently Added</h2>
+    <div>
+        <% bookObj.forEach(book => { %>
+           <img height="150" width="150" src="<%= book.coverImagePath %>">
+        <% }) %>
+    </div>
 </body>
