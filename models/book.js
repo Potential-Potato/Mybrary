@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const coverImageBasePath = 'uploads/bookCovers'
+const coverImageBasePath = 'uplaods/bookCovers'
 
 //acts like a table in sql 
 const booksSchema = new mongoose.Schema({
@@ -11,7 +11,7 @@ const booksSchema = new mongoose.Schema({
     description: {
         type: String,
     },
-    publishDate: {
+   publishDate: {
         type: Date,
         required: true
     },
@@ -34,6 +34,7 @@ const booksSchema = new mongoose.Schema({
         ref: 'authorModel'
     }
 })
+
 
 module.exports = mongoose.model('bookModel', booksSchema)
 module.exports.coverImageBasePath = coverImageBasePath

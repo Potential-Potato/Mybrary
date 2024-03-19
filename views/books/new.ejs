@@ -1,8 +1,11 @@
-<%- include('../partials/header.ejs') %>
-<%- include('../partials/errorMessage.ejs') %>
-<h2>New Book</h2>
-<form action="/books" method="POST"> <!-- /action is where the form goes to-->
-    <%- include('_form_fields.ejs') %>
-    <a href="/books">Cancel</a>
-    <button type="submit">Create</button>
-</form> 
+<body>
+    <%- include('../partials/header.ejs') %>
+    <%- include('../partials/errorMessage.ejs') %>
+    <h2>New Book</h2>
+
+    <form action="/books" method="POST" enctype="multipart/form-data"> <!-- /action is where the form goes to-->
+        <%- include('_form_fields.ejs') %>
+        <a href="/books">Cancel</a>
+        <button type="submit">Create</button>
+    </form> 
+</body>
