@@ -1,0 +1,11 @@
+<body>
+    <%- include('../partials/header.ejs') %>
+    <%- include('../partials/errorMessage.ejs') %>
+    <h2>Edit Book</h2>
+
+    <form action="/books/<%= bookObj.id %>?_method=PUT" method="POST"> <!-- /action is where the form goes to-->
+        <%- include('_form_fields.ejs') %>
+        <a href="/books">Cancel</a>
+        <button type="submit">Update</button>
+    </form> 
+</body>
