@@ -1,0 +1,11 @@
+.title{
+    font-size: 3vw;
+    display: flex;
+    margin: 2rem 1.5rem;
+}
+
+.img-size{
+    height: 250px;
+    width: 200px;
+    
+}

@@ -1,0 +1,55 @@
+.forms-container{
+    margin: 2rem 1.5rem;
+}
+
+.forms-inner-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.forms-inner-container label{
+    font-size: 1.5rem;
+    color: hsl(200, 100%, 87%);
+}
+
+.input-box{
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: hsl(201, 47%, 56%);
+    padding-left: .5rem;
+    color: white;
+} 
+
+.forms-inner-container div{
+    display: flex;
+    justify-content: end;
+}
+
+
+
+.author-container{
+    margin: 2rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-inner-container{
+    flex: 1;
+}
+
+.author-row{
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.btn-row{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}

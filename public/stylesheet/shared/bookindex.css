@@ -1,0 +1,121 @@
+.book-div {
+    margin: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-book-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.inner-book-div-row{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    flex: 1;
+}
+
+.inner-book-div-row:first-child{
+    margin-left: 0;
+}
+
+.inner-book-no-grow{
+    flex: 0;
+}
+
+.img-size2{
+    height: 300px;
+    width: 250px;
+    margin-left: 30px;
+}
+
+
+
+.inner-book-div input, .inner-book-div select, .inner-book-div textarea {
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: hsl(201, 47%, 56%);
+    padding-left: .5rem;
+    color: white;
+}
+
+.inner-book-div-row textarea{
+    height: 100%;
+    font-size: 1rem;
+}
+
+.filepond--root {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+
+}
+
+.filepond--panel-root{
+    background-color: hsl(201, 47%, 56%);
+}
+
+.filepond--drop-label{
+    color: white;
+    font-size: inherit;
+}
+
+.c2{
+    display: flex;
+    justify-content: end;
+    margin: 2rem 1.5rem;
+}
+
+.view-div{
+    margin: 2rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.inner-view-div{
+    display: flex;
+
+}
+
+.inner-view-data{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 1rem;
+}
+
+.inner-view-data:first-child{
+    margin-right: 1rem;
+}
+
+.inner-view-data div{
+    margin-top: .5rem;
+}
+
+.c3{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 1rem;
+}
+
+.view-div-container{
+    margin: -1.3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.view-div2{
+    display: flex;
+    flex-direction: column;
+
+}
+

@@ -1,0 +1,29 @@
+.input-form{
+    margin: 2rem 1.5rem;
+}
+
+.input-form-inner{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+
+.c1{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.small-div{
+    margin: 2rem 1.5rem;
+
+}
+
+.small-div2{
+    display: flex;
+    flex-direction: row;
+}

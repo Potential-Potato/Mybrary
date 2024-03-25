@@ -1,14 +1,18 @@
 <%- include('../partials/header.ejs') %>
-<h2><%= author.name %></h2>
-<a href="/authors/<%= author.id %>/edit">Edit</a>
-<%- include('../partials/deleteForm', {url: `/authors/${author.id}`}) %>
-<% if (booksByAuthor.length > 0 ) { %>
+<div class="small-div">
+    <h2><%= author.name %></h2>
+    <div class="small-div2">
+        <a href="/authors/<%= author.id %>/edit" class="btn-primary">Edit</a>
+        <%- include('../partials/deleteForm', {url: `/authors/${author.id}`}) %>
+        <% if (booksByAuthor.length > 0 ) { %>
+    </div>
     <h2>Books By Author</h2>
     <div>
         <% booksByAuthor.forEach(book => { %>
             <a href="/books/<%= book.id %>">
-           <img height="150" width="150" src="<%= book.coverImagePath %>">
+        <img class="img-size" src="<%= book.coverImagePath %>">
             </a>
         <% }) %>
     </div>
+</div>
 <% } %>

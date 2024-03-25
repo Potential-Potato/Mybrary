@@ -5,7 +5,10 @@
 
     <form action="/books/<%= bookObj.id %>?_method=PUT" method="POST"> <!-- /action is where the form goes to-->
         <%- include('_form_fields.ejs') %>
-        <a href="/books">Cancel</a>
-        <button type="submit">Update</button>
+        <div class="c2">
+            <a href="/books" class="btn">Cancel</a>
+            <button type="submit" class="btn-primary">Update</button>
+        </div>
+        
     </form> 
 </body>

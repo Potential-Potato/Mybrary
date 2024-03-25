@@ -1,0 +1,67 @@
+@import 'shared/fonts.css';
+@import 'shared/variables.css';
+@import 'shared/index.css';
+@import 'shared/authorforms.css';
+@import 'shared/buttons.css';
+@import 'shared/form-fields.css';
+@import 'shared/bookindex.css';
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: hsl(200, 100%, 87%);
+}
+
+body {
+    background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light))
+}
+header {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+}
+
+.header-title {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: hsl(200, 100%, 87%);
+    text-decoration: none; /* Remove underline */
+}
+
+header ul {
+    display: flex;
+    justify-content: end; /* Space items evenly */
+    flex-grow: 1; /* Allow the ul to grow and take remaining space */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 10px;
+}
+
+/* Apply similar styles to the <a> tags inside <li> */
+header ul li a {
+    margin-right: 3rem;
+    font-size: 1rem;
+    color: hsl(200, 61%, 49%);
+    text-decoration: none; /* Remove underline */
+}
+
+header ul li a:hover {
+    color: hsl(200, 100%, 70%); /* Change color on hover */
+}
+
+.container{
+    max-width: 80%;
+    /* margin: auto gives equal margin on left n right of container */
+    margin: auto;
+    margin-bottom: 1.2vw;
+}
+
+.inner-container{
+    margin: 0 2rem;
+}

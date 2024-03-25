@@ -1,35 +1,45 @@
-<div>
-    <label>Title</label>
-    <input type="text" name="title" value='<%= bookObj.title %>'>
-</div>
-<div>
-    <label>Author</label>
-    <select name="authorSelect">
-    <% authorObj.forEach(author => { %>
-        <% if(author.id === bookObj.author) {%>
-        <option selected label="<%= author.name %>" value="<%= author.id %>">
-        <% } else { %>
-        <option selected label="<%= author.name %>" value="<%= author.id %>">
-    <% } %>
-    <% }) %>
-    </select>
-</div>
-<div>
-    <label>Publish Date</label>
-    <input type="Date" name="publishDate" 
-        value='<%= bookObj.publishDate == null ? '' : bookObj.publishDate.toISOString().split('T')[0] %>'>
-</div>
-<div>
-    <label>Page Count</label>
-    <input type="Number" name="pageCount" min="1" value='<%= bookObj.pageCount %>'>
-</div>
-<div>
-    <label>Cover</label>
-    <input type="file" name="cover" class="filepond">
-</div>
-<div>
-    <label>Description</label>
-    <textarea name="description">
-        <%= bookObj.description %>
-    </textarea>
+<div class="book-div">
+        <div class="inner-book-div">
+            <div class="inner-book-div-row">
+                <label>Title</label>
+                <input type="text" name="title" class="input-box" value='<%= bookObj.title %>'>
+            </div>
+    
+            <div class="inner-book-div-row">
+                <label>Author</label>
+                <select name="authorSelect">
+                <% authorObj.forEach(author => { %>
+                    <% if(author.id === bookObj.author) {%>
+                    <option selected label="<%= author.name %>" value="<%= author.id %>">
+                    <% } else { %>
+                    <option selected label="<%= author.name %>" value="<%= author.id %>">
+                <% } %>
+                <% }) %>
+                </select>
+            </div>
+        </div>
+
+        <div class="inner-book-div">
+            <div class="inner-book-div-row">
+                <label>Publish Date</label>
+                <input type="Date" name="publishDate" class="input-box" 
+                value='<%= bookObj.publishDate == null ? '' : bookObj.publishDate.toISOString().split('T')[0] %>'>
+            </div>
+            <div class="inner-book-div-row">
+                <label>Page Count</label>
+                <input type="Number" name="pageCount" min="1" class="input-box" value='<%= bookObj.pageCount %>'>
+            </div>
+        
+        </div>
+
+        <div class="inner-book-div">
+            <div class="inner-book-div-row inner-book-no-grow">
+                <label>Cover</label>
+                <input type="file" name="cover" class="img-size filepond">
+            </div>
+            <div class="inner-book-div-row">
+                <label>Description</label>
+                <textarea name="description" class="description"><%= bookObj.description %></textarea>
+            </div>
+        </div>
 </div>

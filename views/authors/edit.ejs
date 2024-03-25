@@ -1,11 +1,15 @@
 <body>
     <%- include('../partials/header.ejs') %>
     <%- include('../partials/errorMessage.ejs') %>
-    <h2>Edit Author</h2>
+    <h2 class="title">Edit Author</h2>
 
     <form action="/authors/<%= cAuthor.id %>?_method=PUT" method="POST"> <!-- /action is where the form goes to-->
+       <div class="input-form">
         <%- include('_form_fields.ejs') %>
-        <a href="/authors/<%= cAuthor.id %>">Cancel</a>
-        <button type="submit">Update</button>
+        <div class="c1">
+            <a href="/authors/<%= cAuthor.id %>" class="btn-primary">Cancel</a>
+            <button type="submit" class="btn">Update</button>
+        </div>
+       </div>
     </form> 
 </body>
